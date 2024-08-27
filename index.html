@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-section">
+            <label for="input-text">Ingrese el texto aquí:</label>
+            <textarea id="input-text" rows="4" cols="50"></textarea>
+            <div class="char-count" id="char-count">0/500</div>
+        </div>
+        <div class="button-section">
+            <button id="encrypt-btn">Encriptar</button>
+            <button id="decrypt-btn">Desencriptar</button>
+        </div>
+        <div class="output-section">
+            <label for="output-text">Texto encriptado/desencriptado:</label>
+            <textarea id="output-text" rows="4" cols="50" readonly></textarea>
+            <button id="copy-btn">Copiar al portapapeles</button>
+        </div>
+    </div>
+    <div class="rectangle"></div>
+    <script src="script.js"></script>
+</body>
+</html>
